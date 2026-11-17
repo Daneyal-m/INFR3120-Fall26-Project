@@ -1,2 +1,21 @@
 <%- include('partials/header') %>
+
+<section class="hero">
+    <h2>Campus IT support Helpdesk</h2>
+    <p>
+        Experiencing a technical issue, network outage, hardware failure, or software crash? 
+        Log your technical issue in here so our IT support team can resolve it quickly.
+    </p>
+  <a href="/tickets/new" class="btn-hero">Submit Ticket</a>
+
+</section>
+
+<section class="ticket-dashboard">
+  <h3>Active Support Tickets</h3>
+  <!-- Member 2  add the submitted ticket table here -->
+  <% if (tickets.length === 0) { %>
+    <p>No support tickets submitted yet.</p>
+  <% } %>
+</section>
+
 <%- include('partials/footer') %>
