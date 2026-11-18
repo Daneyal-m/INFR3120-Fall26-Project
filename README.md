@@ -26,18 +26,23 @@ FixIT is a website that helps students with their IT problems at their campus. T
 ## How to Run the Project
 
 1. First, we have to clone the project from GitHub:
-git clone https://github.com/Daneyal-m/INFR3120-Fall26-Project.git 
+
+git clone https://github.com/Daneyal-m/INFR3120-Fall26-Project.git  
 
 2. We have to open the project folder: 
+
 cd INFR3120-Fall26-Project
 
 3. We have to install the packages we need: 
+
 npm install
 
 4. We can start the application: 
+
 npm start
 
 5. Last, open the browser: 
+
 http://localhost:3000
 
 ## Team Members
