@@ -1,0 +1,50 @@
+<!--prints header-->
+<%- include('partials/header') %>
+
+<!--centre the form-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <!--shows the page title-->
+            <h1><%= title %></h1>
+
+            <!--sends data to the /tickets page-->
+            <form class="form" method="post" action="/tickets">
+                
+                <!--ASK FOR INPUTS-->
+                <div class="form-group">
+                    <label for="titleTextField">Issue Title</label>
+                    <input type="text" class="form-control" id="titleTextField" placeholder="Enter the issue title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoryTextField">Category</label>
+                    <input type="text" class="form-control" id="categoryTextField" placeholder="Hardware, Software, or Network" name="category" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="locationTextField">Location</label>
+                    <input type="text" class="form-control" id="locationTextField" placeholder="Enter the room or lab" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="priorityTextField">Priority</label>
+                    <input type="text" class="form-control" id="priorityTextField" placeholder="Low, Medium, or High" name="priority" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextField">Description</label>
+                    <textarea type="text" class="form-control" id="descriptionTextField" placeholder="Enter the brief description" name="description" required></textarea>
+                </div>
+
+                <!--submit button-->
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<%- include('partials/footer') %>

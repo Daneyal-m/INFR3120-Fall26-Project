@@ -10,11 +10,42 @@
 
 </section>
 
+<!--ticket list section-->
 <section class="ticket-dashboard">
   <h3>Active Support Tickets</h3>
-  <!-- Member 2  add the submitted ticket table here -->
+  <!-- Member 2 (Xaiver Leung)  add the submitted ticket table here -->
+  <!--when there is 0 tickets-->
   <% if (tickets.length === 0) { %>
     <p>No support tickets submitted yet.</p>
+  <% } else { %>
+    <!--create a table when there are tickets-->
+    <table class="table table-bordered table-striped table-hover">
+      <!--table headers-->
+      <thead>
+        <tr> 
+          <th class="text-center">Date</th> 
+          <th class="text-center">Title</th> 
+          <th class="text-center">Category</th> 
+          <th class="text-center">Location</th> 
+          <th class="text-center">Priority</th> 
+        </tr>
+      </thead>
+
+      <!--table body-->
+      <tbody>
+        <!--loops through every ticket in the list-->
+        <% for (let count=0; count<tickets.length; count++) {%>
+          <tr>
+            <!--prints the ticket info-->
+            <td class="text-center"><%= tickets[count].dateSubmitted %></td> 
+            <td class="text-center"><%= tickets[count].title %></td> 
+            <td class="text-center"><%= tickets[count].category %></td> 
+            <td class="text-center"><%= tickets[count].location %></td> 
+            <td class="text-center"><%= tickets[count].priority %></td> 
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
   <% } %>
 </section>
 
