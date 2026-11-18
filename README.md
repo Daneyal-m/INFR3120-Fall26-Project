@@ -45,6 +45,10 @@ npm start
 
 http://localhost:3000
 
+## Live Website
+
+https://infr3120-fall26-project-bp46.onrender.com/
+
 ## Team Members
 
 - Shariq Haider
