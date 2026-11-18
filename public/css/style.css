@@ -1,0 +1,181 @@
+/* This shows the basic settings for the whole website */
+* {
+    box-sizing: border-box;
+}
+
+/* This will set the font, colours, and spacing for the whole page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* This will control the top part of the website */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* This will control FixIT name beside the logo */
+.site-header h1 {
+    margin: 0;
+    color: #2563eb;
+    font-size: 28px;
+}
+
+/* This will keep the main content in the middle of the page */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* This will control the welcome page */
+.hero {
+    margin: 40px auto;
+    padding: 65px 30px;
+    text-align: center;
+    background-color: #eaf2ff;
+    border-radius: 14px;
+}
+
+/* This will control the text that is below the heading */
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #475569;
+    font-size: 17px;
+}
+
+/* This will control the Submit Ticket button */
+.btn-hero {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* It changes the button colour when the mouse is on it */
+.btn-hero:hover {
+    background-color: #1d4ed8;
+}
+
+/* This will control the ticket dashboard page */
+.ticket-dashboard {
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* This will control the active support ticket heading */
+.ticket-dashboard h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-size: 24px;
+}
+
+/* This will control the ticket table */
+.ticket-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+/* This will control the table headings */
+.ticket-dashboard th {
+    padding: 14px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* This will control the ticket information */
+.ticket-dashboard td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+/* This will change the row colour when the mouse is on it */
+.ticket-dashboard tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* This will control the submit button */
+.btn-primary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* This will change the button colour when the mouse is over it */
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* This will make the website fit in smaller screens */
+@media  (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .ticket-dashboard {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .ticket-dashboard table {
+        min-width: 600px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .site-header {
+        padding: 12px 5%;
+    }
+}
+
+/* This will make the website fit in very small phone screens */
+@media (max-width: 480px) {
+
+    .site-header .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-header h1 {
+        font-size: 23px;
+    }
+
+    .hero h2 {
+        font-size:23px;
+    }
+}
